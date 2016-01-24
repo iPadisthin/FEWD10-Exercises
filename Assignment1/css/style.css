@@ -1,0 +1,183 @@
+@import url(https://fonts.googleapis.com/css?family=Ultra);
+
+/* declare animation called pulse */
+@keyframes pulse {
+  0%   { font-size: 5em; }
+  50% { font-size: 5.5em; }
+  100% { font-size: 5em; }
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+
+    margin: 0;
+    padding: 0;
+    
+    border-bottom: 5px solid #222222;
+    border-top: 5px solid #222222;
+    background: #F6F6F6;
+
+}
+
+/* typography */
+a {
+  font-weight: bold;
+  color: #05080C;
+}
+
+small {
+  color: #05080C;
+}
+
+strong {
+  color: #030609;
+  font-style: italic;
+}
+
+h1 {
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 4em;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: center;
+    color: #030609;
+    margin-top: 0;
+}
+
+h2 {
+  color: #030609;
+}
+
+h3 {
+  font-size: 18px;
+  color: #030609;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 42px;
+}
+
+h4 {
+  font-weight: normal;
+  margin-bottom: 0;
+  color: #05080C;
+}
+
+p {
+  font-family: Georgia, serif;
+  margin-top: 0;
+  margin-bottom: 27px;
+  color: #05080C;
+    
+    max-width: 700px;
+}
+
+ul {
+  list-style: square;
+}
+
+ul p {
+  color: #05080C;
+}
+
+li {
+  color: #05080C;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #222222;
+  margin: 30px 0;
+}
+
+/* layout and components */
+
+div.site-title {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    
+    /* Dracula from http://uigradients.com/ */
+    background: #DC2424; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #DC2424 , #4A569D); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #DC2424 , #4A569D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+div.site-title span {
+    font-family: 'Ultra', serif;
+    font-size: 5em;
+    line-height: 0.8;
+    color: #fff;
+    
+    text-align: center;
+    
+    display: block;
+    height: 1em;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    margin: auto;
+    
+    
+    /* long shadow */
+    text-shadow: rgb(0, 0, 0) 1px 1px,
+    rgb(0, 0, 0) 2px 2px,
+    rgb(0, 0, 0) 3px 3px,
+    rgb(0, 0, 0) 4px 4px,
+    rgb(0, 0, 0) 5px 5px,
+    rgb(0, 0, 0) 6px 6px,
+    rgb(0, 0, 0) 7px 7px,
+    rgb(0, 0, 0) 8px 8px,
+    rgb(0, 0, 0) 9px 9px,
+    rgb(0, 0, 0) 10px 10px,
+    rgb(0, 0, 0) 11px 11px;
+
+    /* use pulse animation */
+    animation: pulse 0.5s 20;
+}
+nav {
+    
+    color: #222222;
+    text-align: center;
+}
+nav ul,
+ul.social {
+    list-style-type: none;
+    padding: 0;
+}
+nav li,
+ul.social li {
+    display: inline-block;
+    padding: 0 10px;
+    color: #ddd;
+    border-right: 1px solid #222222;
+}
+nav li:last-child,
+ul.social li:last-child {
+    border-right: 0;
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+img {
+  /*float: right;*/
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #222222;
+  padding: 5px;
+  text-align: center
+}
+
+img[alt="Avatar"] {
+  float: right;
+}
