@@ -1,0 +1,31 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+h1 {
+    background-color: #ff0000;
+    padding: 20px 10px;
+    border: 3px solid #000000;
+}
+
+p {
+    background: #0000ff; /* blue */
+    color: white;
+    padding: 3px;
+    border: 1px dashed green;
+}
+code {
+    background: rgb(255,255,255);
+    color: #222;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    vertical-align: super;
+}
+li {
+    background: skyblue;
+    border-bottom: 1px solid black;
+}
