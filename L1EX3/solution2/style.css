@@ -1,0 +1,37 @@
+html {
+    border: 3px solid black;
+}
+body {
+    background: #FFE;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+    padding: 30px;
+}
+
+h1 {
+    font-family: Impact, Helvetica, sans-serif;
+    font-size: 4.5em;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+h3 {
+    color: #887;
+    font-style: italic;
+}
+
+h4 {
+    color: #887;
+}
+
+a {
+    color: #900;
+}
+
+img {
+	border: 3px solid black;
+}
