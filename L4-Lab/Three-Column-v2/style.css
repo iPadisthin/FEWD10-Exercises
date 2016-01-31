@@ -1,0 +1,61 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+header {
+    background: #e67e22;
+    padding: 30px 10%;
+    margin-bottom: 20px;
+}
+body {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+main {
+    margin-bottom: 20px;
+}
+
+.wrap {
+    float: left;
+    width: 80%; /* 800px at max width of bidy 1000px */
+}
+.left,
+article,
+.right {
+    background: #8e44ad;
+    min-height: 250px;
+}
+
+.left {
+    width: 22.5%; /* 20/800 */
+    margin-right: 2.5%; /* 2/800 */
+    float: left;
+}
+article {
+    width: 75%; /* 600/800 */
+    float: right;
+}
+.right {
+    width: 18%;
+    float: right;
+    margin-right: 0;
+}
+footer {
+    clear: left;
+    padding: 30px 10%;
+    background-color: #95a5a6;
+}
