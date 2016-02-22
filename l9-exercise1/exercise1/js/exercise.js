@@ -44,6 +44,7 @@ $('#button1').click(function(){
 
 $('#button2').click(function(){
     $('body').css('background','pink');
+    $("h2").css('color','green');
 });
 
 
@@ -78,7 +79,9 @@ $('#button2').click(function(){
  * $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
  */
 
-
+$("#button3").click(function(){
+    $(".city").attr("src", "http://lorempixel.com/g/500/400/food");
+});
 
 /**
  * Question 9:

@@ -1,0 +1,118 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+header {
+    background: grey;
+}
+body {
+    max-width: 960px;
+    margin: 0 auto;
+}
+nav li {
+    display: inline-block;
+    color: white;
+    margin: 20px 30px 20px 0;
+}
+.hamburger {
+    display: none;
+}
+main {
+    background: #f1f1f1;
+    padding: 0 1.041%;
+}
+p {
+    padding: 20px;
+    background: pink;
+}
+div div p {
+    background: grey;
+}
+.one-fourth {
+    width: 22.5%;
+    margin-right: 3.333%;
+    float: left;
+}
+.one-third {
+    width: 30%;
+    margin-right: 5%;
+    float: left;
+}
+.one-fourth:last-child,
+.one-third:last-child {
+    margin-right: 0;
+}
+.parent {
+    background: darkgrey;
+}
+
+.clear {
+    clear:both;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .one-fourth {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+    .one-third {
+        width: 100%;
+        margin-right: 0;
+        float: none;
+    }
+    .hamburger {
+        display: inline-block;
+        color: white;
+        padding: 20px;
+        background: blue;
+    }
+    nav ul {
+        display: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+    }
+    nav li {
+        display: block;
+        color: white;
+        background: blue;
+        margin: 0;
+        padding: 20px;
+        border-bottom: 1px solid darkblue;
+    }
+    
+}
