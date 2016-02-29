@@ -1,0 +1,13 @@
+label,
+input {
+    display: block;
+}
+input {
+    margin-bottom: 1em;
+}
+input[type="checkbox"] {
+    display: inline;
+}
+input[type="checkbox"] + label {
+    display: inline-block;
+}
